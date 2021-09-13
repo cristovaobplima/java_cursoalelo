@@ -17,7 +17,7 @@ public class Exerc4 {
             var listamaiornum = new ArrayList<Integer>();
             var executarPrograma = true;
 
-            while (executarPrograma){
+            while (executarPrograma) {
 
                 System.out.println("Digite um numero: ");
                 indice.add(entrada.nextInt());
@@ -25,18 +25,13 @@ public class Exerc4 {
                 if (entrada.next().charAt(0) == 'n') {
                     programacontinuaexec = false;
 
+                }
+
+
             }
 
-
-
-
-
-
-
-
-
-
         }
-
     }
+
+
 }
