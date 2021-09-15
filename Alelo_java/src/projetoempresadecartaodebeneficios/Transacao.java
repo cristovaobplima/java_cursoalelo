@@ -2,30 +2,28 @@ package projetoempresadecartaodebeneficios;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List
-
+import java.util.List;
 
 public class Transacao {
 
-    private Long identificadorDaTransacao;
-    private String identificadorDoCartao;
+    private Integer identificadorDaTransacao;
+    private String beneficiario;
+    private Integer identificadorDoCartao;
     private LocalDateTime dataHoraTransacao;
     private String identicadorDoEstabelecimento;
     private String localizacaoDoEstabelecimento;
     private String tipoDoEstabelecimento;
     private Double valorDaTransacao;
 
-    //Cria uma lista para armazenar as transações do VA
-    public static List<Transacao> listaTransacoesVA = new ArrayList<>();
-    //Cria uma lista para armazenar as transações do VR
-    public static List<Transacao> listaTransacoesVR = new ArrayList<>();
-    //Cria uma lista para armazenar as transações do VC
-    public static List<Transacao> listaTransacoesVC = new ArrayList<>();
+    public Transacao() {
 
-    public Transacao(Long identificadorDaTransacao, String identificadorDoCartao, LocalDateTime dataHoraTransacao,
-                     String identicadorDoEstabelecimento, String localizacaoDoEstabelecimento,
+    }
+
+    public Transacao(Integer identificadorDaTransacao, String beneficiario, Integer identificadorDoCartao,
+                     LocalDateTime dataHoraTransacao, String identicadorDoEstabelecimento, String localizacaoDoEstabelecimento,
                      String tipoDoEstabelecimento, Double valorDaTransacao) {
         this.identificadorDaTransacao = identificadorDaTransacao;
+        this.beneficiario = beneficiario;
         this.identificadorDoCartao = identificadorDoCartao;
         this.dataHoraTransacao = dataHoraTransacao;
         this.identicadorDoEstabelecimento = identicadorDoEstabelecimento;
@@ -34,23 +32,19 @@ public class Transacao {
         this.valorDaTransacao = valorDaTransacao;
     }
 
-    //TODO implementar o método de cadastro (tipo o do beneficiario)
-
-    //TODO método para tirar o extrato (pessoa seleciona extrato do dia ou extrato da semana, ou extrato do mês)
-
-    public Long getIdentificadorDaTransacao() {
+    public Integer getIdentificadorDaTransacao() {
         return identificadorDaTransacao;
     }
 
-    public void setIdentificadorDaTransacao(Long identificadorDaTransacao) {
+    public void setIdentificadorDaTransacao(Integer identificadorDaTransacao) {
         this.identificadorDaTransacao = identificadorDaTransacao;
     }
 
-    public String getIdentificadorDoCartao() {
+    public Integer getIdentificadorDoCartao() {
         return identificadorDoCartao;
     }
 
-    public void setIdentificadorDoCartao(String identificadorDoCartao) {
+    public void setIdentificadorDoCartao(Integer identificadorDoCartao) {
         this.identificadorDoCartao = identificadorDoCartao;
     }
 
@@ -92,12 +86,28 @@ public class Transacao {
 
     public void setValorDaTransacao(Double valorDaTransacao) {
         this.valorDaTransacao = valorDaTransacao;
-
-
-
-
-
-
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+
+        if (!(obj instanceof Transacao))
+            return false;
+
+        if (obj == this)
+            return true;
+
+        Transacao p = (Transacao) obj;
+
+        // Aqui você implementa como deve se feita a comparação.
+        // Verifica se os nomes dos produtos são iguais, ids e etc.
+
+        if (p.identificadorDaTransacao == this.identificadorDaTransacao) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

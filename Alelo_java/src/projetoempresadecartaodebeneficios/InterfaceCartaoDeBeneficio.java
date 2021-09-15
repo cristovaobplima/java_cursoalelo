@@ -1,10 +1,13 @@
 package projetoempresadecartaodebeneficios;
 
+
+import java.time.LocalDate;
+
 public interface InterfaceCartaoDeBeneficio {
 
-    void adicionarTransacao(Double valor, Integer identificadorEstabelecimento, String tipoDeEstabelecimento);
+    void adicionarTransacao();
 
-    void mostrarSaldo();
+    void mostrarSaldo(Double saldoAtual1) ;
 
     void criaDataDeCadastro();
 
