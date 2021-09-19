@@ -8,6 +8,8 @@ public class Setup {
 
         try (Scanner in = new Scanner(System.in)) {
             ConexaoBD.getConnection().Conn();
+            Portador.cadastroPortador();
+
 
 
         }
