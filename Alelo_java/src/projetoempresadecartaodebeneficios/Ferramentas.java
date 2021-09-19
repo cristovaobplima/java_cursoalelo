@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Ferramentas {
 
-    //Formata a data para exibição padrão "dd/MM/yyyy"
+    /*Formata a data para exibição padrão "dd/MM/yyyy"
     public static void formatarDataPadrao(LocalDate data1) {
 
         LocalDate dt1 = LocalDate.parse(data1.toString(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
@@ -882,5 +882,9 @@ public class Ferramentas {
         //Invoca o método para iniciar o menu principal do programa
         Ferramentas.inicializaMenuPrincipal();
     }
+
+}
+
+     */
 
 }

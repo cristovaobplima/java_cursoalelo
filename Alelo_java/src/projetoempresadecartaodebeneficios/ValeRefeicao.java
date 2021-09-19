@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ValeAlimentacao extends CartaoDeBeneficio implements InterfaceCartaoDeBeneficio {
+/* public class ValeAlimentacao extends CartaoDeBeneficio implements InterfaceCartaoDeBeneficio {
+
 
     //Cria variáveis necessárias para classe
     public static Integer incrementoIdentificadorVA = 1;
@@ -304,3 +305,5 @@ public class ValeAlimentacao extends CartaoDeBeneficio implements InterfaceCarta
     }
 
 }
+
+ */

@@ -6,10 +6,10 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/*
 public class ValeAlimentacao extends CartaoDeBeneficio implements InterfaceCartaoDeBeneficio {
 
-    //Cria variáveis necessárias para classe
+    /*Cria variáveis necessárias para classe
     public static Integer incrementoIdentificadorVA = 1;
     public static Integer incrementoIdentificadorTransacoesVA = 1;
     int index = 0;
@@ -305,3 +305,8 @@ public class ValeAlimentacao extends CartaoDeBeneficio implements InterfaceCarta
 
 
 }
+
+
+
+     */
+
